@@ -51,7 +51,7 @@ jobs:
 
       - name: install packages
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm install --force
+        run: cd ../.. && npm install --force
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Build
