@@ -61,7 +61,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1.2.1
+        uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
           path: './public'
