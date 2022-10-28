@@ -49,13 +49,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: install theme
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: cd themes/typography && npm install --force
-
       - name: install packages
         if: steps.cache.outputs.cache-hit != 'true'
-        run: cd ../.. && npm install --force
+        run: npm install
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Build
