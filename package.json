@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate && cp CNAME ./public",
+    "build": "npm run clean && hexo generate && cp CNAME ./public",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
