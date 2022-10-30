@@ -19,14 +19,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v3
-      - name: setup node ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
         with:
-          node-version: 16.12.0
+          fetch-depth: "0"
+
+      - name: setup node ${{ matrix.node_version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.16.0
+          
       - name: npm version
         run: npm --version
+
       - name: cache node_modules
         uses: actions/cache@v1
         id: cache
