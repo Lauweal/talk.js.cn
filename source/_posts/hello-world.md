@@ -1,6 +1,7 @@
 ---
 title: Hello World
-categories: 首页
+categories: 
+  - Hexo
 tags:
   - 测试
 ---
