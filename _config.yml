@@ -24,7 +24,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: source/tags
-archive_dir: source/archives
+archive_dir: archives
 category_dir: source/categories
 code_dir: downloads/code
 i18n_dir: :lang
