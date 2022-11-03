@@ -8,7 +8,7 @@ menu:
   Archives: archives
   Categories: categories
   Tags: tags
-  About: about
+  # About: about
 rss: /atom.xml
 
 
